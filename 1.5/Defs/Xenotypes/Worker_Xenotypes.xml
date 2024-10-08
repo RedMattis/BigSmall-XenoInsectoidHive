@@ -1,0 +1,76 @@
+<Defs>
+  
+  <XenotypeDef ParentName="BS_XenoBugStandard">
+    <defName>BS_XenoWorker</defName>
+    <label>Xeno Worker</label>
+    <combatPowerFactor>0.75</combatPowerFactor>
+    <description>The backbone of the Xeno Hive. Xeno Workers work tirelessly to keep the hive operational. They tend to be fairly competent in most tasks, but struggly to really stand out with any particular work.</description>
+    <iconPath>UI/Icons/Xenotypes/BP_XenoWorker</iconPath> <!--Replace this...-->
+    <inheritable>true</inheritable>
+		<nameMaker>BS_HiveCreepy_Namer</nameMaker>
+	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <factionlessGenerationWeight>1</factionlessGenerationWeight>
+    <genes>
+			<li>BS_DroneKind</li>
+
+			<li>BS_ToughSkin</li>
+			<li>BS_SmallFrame</li>
+			<li>BP_Raptoriales</li>
+			<li>BugParts_Abdomen_Ant</li>
+			<li>Beetle_Antennae</li>
+			
+			<li>Immunity_Strong</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>Mood_Sanguine</li>
+			<li>MinTemp_SmallIncrease</li>
+			
+			<li>LowSleep</li>
+			<!-- <li>Delicate</li> -->
+			<li>BS_AcidResistanceMid</li>
+			<li>Body_MaleOnly</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li>WoundHealing_Fast</li>
+			
+			<li>KindInstinct</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Beauty_Pretty</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Androgynous</li>
+			<li>Body_Thin</li>
+			<li>Skin_PaleYellow</li>
+			<!-- <li>BS_VeryFastAging</li> -->
+			 <li>BS_UltraFastAging</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Instability_Mild</li>
+			
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeStrong_Construction</li>
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeStrong_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+
+			<li>BS_Retromorph_TimeUnderTeenage</li>
+			<li>BS_XenoNymph_Retromorphosis</li>
+		</genes>
+		<forbiddenWeaponClasses>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+		<modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <morphWeight>1.8</morphWeight>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  
+</Defs>

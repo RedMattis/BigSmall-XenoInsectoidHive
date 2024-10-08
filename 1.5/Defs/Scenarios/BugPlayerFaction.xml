@@ -1,0 +1,108 @@
+<Defs>
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>BS_XenoInsectoidHiveStart</defName>
+    <label>Player Hive</label>
+    <description>a hive of xenohuman insectoids.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnSingular>xeno</pawnSingular>
+    <pawnsPlural>xenos</pawnsPlural>
+    <techLevel>Medieval</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icons/BS_XenoHive_Faction_Icon</factionIconPath>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>2</BS_XenoWarrior>
+        <BS_XenoPredator>1</BS_XenoPredator>
+        <BS_XenoWorker>2</BS_XenoWorker>
+
+        <BS_XenoConsort>0.5</BS_XenoConsort>
+        <BS_XenoPrincess>0.25</BS_XenoPrincess>
+        <BS_XenoQueen>0.1</BS_XenoQueen>
+
+        <BS_XenoEmissary>0.25</BS_XenoEmissary>
+        <BS_XenoAbomination>0.01</BS_XenoAbomination>
+
+        <BS_XenoNymph>1</BS_XenoNymph>
+        <BS_XenoAlate>0.5</BS_XenoAlate>
+
+        <BP_Mantid>0.025</BP_Mantid>
+        <BP_Lunarian>0.025</BP_Lunarian>
+        <BP_Spiderman>0.025</BP_Spiderman>
+      </xenotypeChances>
+    </xenotypeSet>
+    
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>WoolBison</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    <modExtensions>
+      <li Class="BigAndSmall.FactionExtension">
+        <pawnKindSwaps>
+          <li>
+            <eventsToSwapPawnKind>
+              <li>QuestNode_Root_WandererJoin_WalkIn</li>
+            </eventsToSwapPawnKind>
+            <pawnKindSet>
+              <BS_XenoBugVillager>1</BS_XenoBugVillager>
+            </pawnKindSet>
+            <!-- <forcePawnKindIdeology>true</forcePawnKindIdeology> -->
+          </li>
+          <li>
+            <eventsToSwapPawnKind>
+              <li>ThingSetMaker_RefugeePod</li>
+            </eventsToSwapPawnKind>
+            <pawnKindSet>
+              <BS_XenoBugVillager>1</BS_XenoBugVillager>
+              <BS_SpaceRefugeeXenoPlus>2</BS_SpaceRefugeeXenoPlus>
+              <SpaceRefugee>2</SpaceRefugee>
+            </pawnKindSet>
+          </li>
+        </pawnKindSwaps>
+			</li>
+    </modExtensions>
+  </FactionDef>
+
+  <PawnKindDef ParentName="BS_VillagerXenoPlus">
+    <defName>BS_XenoBugVillager</defName>
+    <apparelColor>0.56, 0.56, 0.407</apparelColor>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>0.5</BS_XenoWarrior>
+        <BS_XenoPredator>0.25</BS_XenoPredator>
+        <BS_XenoWorker>0.5</BS_XenoWorker>
+
+        <BS_XenoConsort>1</BS_XenoConsort>
+        <BS_XenoPrincess>1</BS_XenoPrincess>
+        <BS_XenoQueen>0.1</BS_XenoQueen>
+
+        <BS_XenoEmissary>0.25</BS_XenoEmissary>
+
+        <BP_Mantid>0.025</BP_Mantid>
+        <BP_Lunarian>0.025</BP_Lunarian>
+        <BP_Spiderman>0.025</BP_Spiderman>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+</Defs>

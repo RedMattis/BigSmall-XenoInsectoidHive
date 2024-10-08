@@ -1,0 +1,121 @@
+<Defs>
+  
+  <XenotypeDef ParentName="BS_XenoBugStandard">
+    <defName>BS_XenoNymph</defName>
+    <label>Xeno Nymph</label>
+    <combatPowerFactor>0.75</combatPowerFactor>
+    <description>An immature insect which will eventually grow up into a member of the xeno hive's worker caste.</description>
+    <iconPath>UI/Icons/Xenotypes/BP_XenoNymph</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>BS_Bug_NamerFem_PlusCreepy</nameMaker>
+	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+			<li>BS_DroneKind</li>
+
+			<li>BS_ToughSkin</li>
+			<li>BP_Raptoriales</li>
+			<li>BugParts_Abdomen_Ant</li>
+			<li>Beetle_Antennae</li>
+			<li>Immunity_Strong</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>Mood_Sanguine</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>BS_SmallFrame</li>
+			<li>LowSleep</li>
+			<li>BS_AcidResistanceMid</li>
+			<li>Body_MaleOnly</li>
+			<li>Beauty_Pretty</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Androgynous</li>
+			<li>Body_Thin</li>
+			<li>Skin_PaleYellow</li>
+			<li>BS_VeryFastAging</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Instability_Mild</li>
+      <li>Sterile</li>
+      <li>BS_NotFlirty</li>
+			<li>BS_Very_Passioned_Learning_Gene</li>
+			<li>Hair_BaldOnly</li>
+			
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeStrong_Construction</li>
+
+      <li>BS_Metamorph_TimeTeenage</li>
+      <li>BS_XenoWorker_Metamorphosis</li>
+      <li>BS_XenoWarrior_Metamorphosis</li>
+      <li>BS_XenoPredator_Metamorphosis</li>
+      <li>BS_XenoAbomination_Metamorphosis</li>
+			<li>BS_XenoEmissary_Metamorphosis</li>
+		</genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <morphWeight>2</morphWeight>
+        <morphIgnoreGender>true</morphIgnoreGender>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="BS_XenoBugStandard">
+    <defName>BS_XenoAlate</defName>
+    <label>Xeno Alate</label>
+    <combatPowerFactor>0.75</combatPowerFactor>
+    <description>An immature Xeno Hive insect which will one day grow up into either a Consort or Princess.</description>
+    <iconPath>UI/Icons/Xenotypes/BP_XenoAgate</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>BS_Bug_NamerFem_PlusCreepy</nameMaker>
+	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+			<li>BS_ToughSkin</li>
+			<li>BP_Raptoriales</li>
+			<li>BugParts_Abdomen_Ant</li>
+			<li>Beetle_Antennae</li>
+			<li>Immunity_Strong</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Mood_Sanguine</li>
+			<li>BS_SmallFrame</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>LowSleep</li>
+			<li>BS_AcidResistanceMid</li>
+			<li>Sterile</li>
+      <li>BS_NotFlirty</li>
+			<li>Beauty_Pretty</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Androgynous</li>
+			<li>Body_Thin</li>
+			<li>Skin_PaleYellow</li>
+			<li>BS_VeryFastAging</li>
+			<li>Learning_Fast</li>
+			<li>BS_Passioned_Learning_Gene</li>
+			
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Instability_Mild</li>
+
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudePoor_Intellectual</li>
+			<li>AptitudeStrong_Construction</li>
+
+			<li>BS_Metamorph_TimeTeenage</li>
+			<li>BS_XenoConsort_Metamorphosis</li>
+			<li>BS_XenoPrincess_Metamorphosis</li>
+			<li>BS_XenoEmissary_Metamorphosis</li>
+			<li>BS_XenoAbomination_Metamorphosis</li>
+		</genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <morphWeight>1</morphWeight>
+        <morphIgnoreGender>true</morphIgnoreGender>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+</Defs>

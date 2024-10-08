@@ -1,0 +1,69 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_UltraFastAging</defName>
+    <label>ultra fast aging</label>
+    <description>Carriers of this gene age dramatically faster than a baseline humans after reaching their teens and have extremely short lifespans.\n\nOften found on insectoid xenotypes along with "very early maturity"</description>
+    <iconPath>GeneIcons/BS_UltraFastAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
+    <customEffectDescriptions>
+      <li>Uses an experimental aging system.</li>
+    </customEffectDescriptions>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 8)</li>
+        <li>(2.99, 8)</li>
+        <li>(3, 4)</li>
+        <li>(13, 4)</li>
+        <li>(13.1, 16)</li>
+        <li>(150, 16)</li>
+        <li>(200, 4)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>4</biostatMet>
+    <biostatCpx>-5</biostatCpx>
+    <exclusionTags>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <selectionWeight>0.5</selectionWeight>
+    <statFactors>
+      <SM_GrowthPointAccumulation>4</SM_GrowthPointAccumulation>
+    </statFactors>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff><li><hediff>RED_SecretHealthTracker</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_BodySwitch">
+		<defName>BS_InsectoidFourArms</defName>
+		<label>insectoid morphology</label>
+		<description>Carriers of this gene are humanlike being with four arms, four eyes, and four times the chance of frightening outlanders.\n\nCarriers work a bit faster thanks to the extra arms, but lack a bit in fine motor ability.\n\nThis does not visually change the character, for that you need cosmetic genes.</description>
+    <customEffectDescriptions>
+			<li>Changing the actual body-def requires Humanoid Alien Races, otherwise you just get the stats.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<iconPath>GeneIcons/BS_InsectoidBody</iconPath>
+    <statOffsets>
+      <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+    </statOffsets>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>-0.05</offset>
+			</li>
+		</capMods>
+    <exclusionTags>
+      <li>ThingDefSwap</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_InsectoidHumanoid_FourArmed</thingDefSwap>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

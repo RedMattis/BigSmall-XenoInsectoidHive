@@ -1,0 +1,183 @@
+<Patch>
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>BS_XenoHive</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(200, 0)</li>
+                  <li>(1000, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>BS_XenoHive</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(200, 0)</li>
+              <li>(1000, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>BS_XenoHive</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(200, 0)</li>
+                  <li>(1000, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>BS_XenoHive</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(200, 0)</li>
+              <li>(1000, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>BS_XenoHive</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(200, 0)</li>
+                  <li>(1000, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>BS_XenoHive</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(200, 0)</li>
+              <li>(1000, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>BS_XenoHive</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(200, 0)</li>
+                  <li>(1000, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>BS_XenoHive</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(200, 0)</li>
+              <li>(1000, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+
+  <!-- Patch bugs into the Wildman Pawnkind. -->
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnKindDef[defName="WildMan"]/xenotypeSet</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[defName="WildMan"]</xpath>
+			<value>
+				<xenotypeSet Inherit="False">
+          <xenotypeChances>
+            <BS_XenoConsort>0.3</BS_XenoConsort>
+            <BS_XenoPrincess>0.3</BS_XenoPrincess>
+          </xenotypeChances>
+        </xenotypeSet>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+        <BS_XenoConsort>0.3</BS_XenoConsort>
+        <BS_XenoPrincess>0.3</BS_XenoPrincess>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+    <value>
+      <li>
+        <categoryName>BS_XenoInsectChild</categoryName>
+        <slot>Childhood</slot>
+      </li>
+      <li>
+        <categoryName>BS_InsectChild_Alate</categoryName>
+        <slot>Childhood</slot>
+      </li>
+    </value>
+  </Operation>
+
+
+</Patch>

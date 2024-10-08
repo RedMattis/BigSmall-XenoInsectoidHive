@@ -1,0 +1,8 @@
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Genes & More\1.5\Experimental\Assemblies\RedHealth.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Genes & More\1.5\Experimental\Source\HealthExperimental\obj\Debug\BSHealth.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Genes & More\1.5\Experimental\Source\HealthExperimental\obj\Debug\BSHealth.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Genes & More\1.5\Experimental\Source\HealthExperimental\obj\Debug\RedHealth.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Bugs & other Insects\1.5\Experimental\Assemblies\RedHealth.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Bugs & other Insects\1.5\Experimental\Source\HealthExperimental\obj\Debug\BSHealth.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Bugs & other Insects\1.5\Experimental\Source\HealthExperimental\obj\Debug\BSHealth.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Big and Small - Bugs & other Insects\1.5\Experimental\Source\HealthExperimental\obj\Debug\RedHealth.dll

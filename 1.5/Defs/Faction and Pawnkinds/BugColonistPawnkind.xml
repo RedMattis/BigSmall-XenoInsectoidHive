@@ -1,0 +1,53 @@
+<Defs>
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>BS_ColonistInsect</defName>
+    <label>insect colonist</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <apparelColor>0.6, 0.56, 0.407</apparelColor>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoConsort>2</BS_XenoConsort>
+        <BS_XenoPrincess>2</BS_XenoPrincess>
+        <BS_XenoQueen>0.5</BS_XenoQueen>
+        <BS_XenoWorker>4</BS_XenoWorker>
+        <BS_XenoWarrior>2</BS_XenoWarrior>
+        <BS_XenoPredator>1.6</BS_XenoPredator>
+        <BS_XenoEmissary>1</BS_XenoEmissary>
+        <BS_XenoAbomination>0.1</BS_XenoAbomination>
+
+        <BP_Mantid>0.5</BP_Mantid>
+        <BP_Lunarian>0.5</BP_Lunarian>
+        <BP_Spiderman>0.25</BP_Spiderman>
+        
+        <!-- <BS_Weaver MayRequire="RedMattis.MoreXenos">0.5</BS_Weaver>
+        <BS_Devilspider MayRequire="RedMattis.MoreXenos">0.25</BS_Devilspider> -->
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+</Defs>

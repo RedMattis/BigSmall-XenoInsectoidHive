@@ -1,0 +1,312 @@
+<Defs>
+  <PawnKindDef ParentName="BS_Tribal_Wildman" Name="BS_XenoBase" Abstract="True">
+    <combatPower>60</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <!-- <apparelIgnoreSeasons>true</apparelIgnoreSeasons> -->
+    <apparelIgnorePollution>true</apparelIgnorePollution>
+    <apparelMoney>50~100</apparelMoney>
+    <itemQuality>Poor</itemQuality>
+    <apparelTags>
+      <!-- <li>Neolithic</li> -->
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <gearHealthRange>0.5~1.5</gearHealthRange>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+    <apparelColor>0.56, 0.56, 0.407</apparelColor>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BS_XenoBase" Name="BS_XenoChildBase" Abstract="True">
+    <minGenerationAge>9</minGenerationAge>
+    <maxGenerationAge>12</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoBase" Name="BS_XenoAdultBase" Abstract="True">
+    <minGenerationAge>13</minGenerationAge>
+    <maxGenerationAge>35</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoBase" Name="BS_XenoRoyalAdultBase" Abstract="True">
+    <minGenerationAge>13</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+  </PawnKindDef>
+
+  <!-- Children -->
+
+  <PawnKindDef ParentName="BS_XenoChildBase">
+    <defName>BS_XenoAlate</defName>
+    <label>alate</label>
+    <combatPower>50</combatPower>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoAlate>999</BS_XenoAlate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectWorker</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoChildBase">
+    <defName>BS_XenoNymph</defName>
+    <label>nymph</label>
+    <combatPower>50</combatPower>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoNymph>999</BS_XenoNymph>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectConsort</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <!--Workers-->
+
+  <PawnKindDef ParentName="BS_XenoAdultBase">
+    <defName>BS_XenoWorker</defName>
+    <label>worker</label>
+    <combatPower>50</combatPower>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>999</BS_XenoWarrior>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectWorker</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <!--Fighters-->
+
+  <PawnKindDef ParentName="BS_XenoAdultBase">
+    <defName>BS_XenoWarrior</defName>
+    <label>warrior</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>999</BS_XenoWarrior>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectWarrior</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoAdultBase">
+    <defName>BS_XenoPredator</defName>
+    <label>predator</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoPredator>999</BS_XenoPredator>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectHunter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoAdultBase">
+    <defName>BS_XenoAbomination</defName>
+    <label>mutated abomination</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoAbomination>999</BS_XenoAbomination>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectWarrior</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+
+  <!-- Royalty -->
+
+  <PawnKindDef ParentName="BS_XenoRoyalAdultBase">
+    <defName>BS_XenoConsort</defName>
+    <label>consort</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoConsort>999</BS_XenoConsort>
+      </xenotypeChances>
+    </xenotypeSet>
+    <factionLeader>true</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectConsort</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoRoyalAdultBase">
+    <defName>BS_XenoPrincess</defName>
+    <label>consort</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoPrincess>999</BS_XenoPrincess>
+      </xenotypeChances>
+    </xenotypeSet>
+    <factionLeader>true</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectPrincess</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoAdultBase">
+    <defName>BS_XenoQueen</defName>
+    <label>consort</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoQueen>999</BS_XenoQueen>
+      </xenotypeChances>
+    </xenotypeSet>
+    <factionLeader>true</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectQueen</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>18</minGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_XenoRoyalAdultBase">
+    <defName>BS_XenoEmissary</defName>
+    <label>emissary</label>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoEmissary>999</BS_XenoEmissary>
+      </xenotypeChances>
+    </xenotypeSet>
+    <factionLeader>true</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_XenoInsectChild_Alate</li>
+          <li>BS_XenoInsectChild</li>
+          <li>BS_XenoInsectEmissary</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+
+   <!--Irregulars -->
+
+   <PawnKindDef ParentName="MercenaryGunnerBase">
+    <defName>BS_XenoIrregular</defName>
+    <label>xeno irregular</label>
+    <apparelColor>0.6, 0.56, 0.407</apparelColor>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>1</BS_XenoWarrior>
+        <BS_XenoPredator>2</BS_XenoPredator>
+        <BS_XenoConsort>1</BS_XenoConsort>
+        <BS_XenoPrincess>1</BS_XenoPrincess>
+
+        <BS_XenoEmissary>0.5</BS_XenoEmissary>
+
+        <BP_Mantid>0.2</BP_Mantid>
+        <BP_Lunarian>0.2</BP_Lunarian>
+        <BP_Spiderman>0.2</BP_Spiderman>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GrenadierBase">
+    <defName>BS_XenoIrregular_Boom</defName>
+    <label>xeno irregular grenadier</label>
+    <apparelColor>0.6, 0.56, 0.407</apparelColor>
+    <combatPower>70</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <initialResistanceRange>10~16</initialResistanceRange>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoWarrior>2</BS_XenoWarrior>
+        <BS_XenoConsort>2</BS_XenoConsort>
+        <BS_XenoPrincess>2</BS_XenoPrincess>
+
+        <BS_XenoEmissary>1</BS_XenoEmissary>
+
+        <BP_Mantid>0.1</BP_Mantid>
+        <BP_Lunarian>0.1</BP_Lunarian>
+        <BP_Spiderman>0.2</BP_Spiderman>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>BS_XenoIrregular_Elite</defName>
+    <label>xeno elite irregular</label>
+    <apparelColor>0.6, 0.56, 0.407</apparelColor>
+    <initialResistanceRange>10~20</initialResistanceRange>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_XenoPredator>2</BS_XenoPredator>
+        <BS_XenoConsort>2</BS_XenoConsort>
+        <BS_XenoPrincess>2</BS_XenoPrincess>
+
+        <BS_XenoEmissary>2</BS_XenoEmissary>
+
+        <BP_Mantid>0.1</BP_Mantid>
+        <BP_Lunarian>0.1</BP_Lunarian>
+        <BP_Spiderman>0.1</BP_Spiderman>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+</Defs>

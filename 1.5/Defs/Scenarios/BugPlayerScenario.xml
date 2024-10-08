@@ -1,0 +1,77 @@
+<Defs>
+  <ScenarioDef>
+    <defName>BS_XenoInsectoidHiveStart</defName>
+    <label>Xeno-Insectoid Start</label>
+    <description>New beginnings for an xenohuman hive of insect-likes.\n\nThis start will replace many wanderers with xeno hive xenotypes, and make non-human space-refugees of all kind more common.</description>
+    <scenario>
+      <summary>A group of xeno princesses and consorts have met up to try to establish a new hive.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>BS_XenoInsectoidHiveStart</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <xenotypeCounts>
+            <li>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_XenoPrincess</xenotype>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_XenoConsort</xenotype>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_XenoWorker</xenotype>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A group of xeno princesses and consorts have met up to try to establish a new hive.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>3000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Smithing</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>
