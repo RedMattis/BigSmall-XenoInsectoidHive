@@ -165,12 +165,7 @@
           <Town_Guard>5</Town_Guard>
           <Mercenary_Slasher>5</Mercenary_Slasher>
           <Town_Councilman>10</Town_Councilman>
-          <Megascarab>20</Megascarab>
-          <Spelopede>12</Spelopede>
-          <Megaspider>32</Megaspider>
-          <VFEI2_Megapede MayRequire="OskarPotocki.VFE.Insectoid2">8</VFEI2_Megapede>
-          <VFEI2_Queen MayRequire="OskarPotocki.VFE.Insectoid2">4</VFEI2_Queen>
-          <VFEI2_Swarmling MayRequire="OskarPotocki.VFE.Insectoid2">4</VFEI2_Swarmling>
+
         </options>
       </li>
       <li>
@@ -218,6 +213,12 @@
           <BS_XenoPrincess>1</BS_XenoPrincess>
           <BS_XenoQueen>0.1</BS_XenoQueen>
           <BS_XenoEmissary>0.1</BS_XenoEmissary>
+          <Megascarab>20</Megascarab>
+          <Spelopede>12</Spelopede>
+          <Megaspider>32</Megaspider>
+          <VFEI2_Megapede MayRequire="OskarPotocki.VFE.Insectoid2">8</VFEI2_Megapede>
+          <VFEI2_Queen MayRequire="OskarPotocki.VFE.Insectoid2">4</VFEI2_Queen>
+          <VFEI2_Swarmling MayRequire="OskarPotocki.VFE.Insectoid2">4</VFEI2_Swarmling>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">

@@ -58,11 +58,11 @@
 			</li>
 		</capMods>
     <exclusionTags>
-      <li>ThingDefSwap</li>
+      <li>BS_BodySwap</li>
     </exclusionTags>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-				<thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_InsectoidHumanoid_FourArmed</thingDefSwap>
+				<thingDefSwap>BS_InsectoidHumanoid_FourArmed</thingDefSwap>
 			</li>
 		</modExtensions>
 	</GeneDef>
