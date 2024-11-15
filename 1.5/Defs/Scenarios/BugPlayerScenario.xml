@@ -10,6 +10,11 @@
         <factionDef>BS_XenoInsectoidHiveStart</factionDef>
       </playerFaction>
       <parts>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A group of xeno princesses and consorts have met up to try to establish a new hive.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
           <pawnChoiceCount>8</pawnChoiceCount>
@@ -37,11 +42,6 @@
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
           <method>Standing</method>
-        </li>
-        <li Class="ScenPart_GameStartDialog">
-          <def>GameStartDialog</def>
-          <text>A group of xeno princesses and consorts have met up to try to establish a new hive.</text>
-          <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
