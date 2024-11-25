@@ -36,7 +36,7 @@
 		</modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="BS_BodySwitch">
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
 		<defName>BS_InsectoidFourArms</defName>
 		<label>insectoid morphology</label>
 		<description>Carriers of this gene are humanlike being with four arms, four eyes, and four times the chance of frightening outlanders.\n\nCarriers work a bit faster thanks to the extra arms, but lack a bit in fine motor ability.\n\nThis does not visually change the character, for that you need cosmetic genes.</description>
@@ -48,6 +48,9 @@
 		<selectionWeight>0</selectionWeight>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<iconPath>GeneIcons/BS_InsectoidBody</iconPath>
+    <exclusionTags>
+      <li>ExtraArms</li>
+    </exclusionTags>
     <statOffsets>
       <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
     </statOffsets>
@@ -57,9 +60,6 @@
 				<offset>-0.05</offset>
 			</li>
 		</capMods>
-    <exclusionTags>
-      <li>BS_BodySwap</li>
-    </exclusionTags>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
 				<thingDefSwap>BS_InsectoidHumanoid_FourArmed</thingDefSwap>
