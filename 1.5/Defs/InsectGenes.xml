@@ -30,7 +30,7 @@
     </statFactors>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>RED_SecretHealthTracker</hediff></li></applyBodyHediff>
 			</li>
 		</modExtensions>
@@ -61,7 +61,7 @@
 			</li>
 		</capMods>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_InsectoidHumanoid_FourArmed</thingDefSwap>
 			</li>
 		</modExtensions>
