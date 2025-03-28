@@ -12,6 +12,7 @@
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
 			<li>BS_DroneKind</li>
+			<li>BS_NoFamilyRelations</li>
 
 			<li>BS_ToughSkin</li>
 			<li>BS_SmallFrame</li>
