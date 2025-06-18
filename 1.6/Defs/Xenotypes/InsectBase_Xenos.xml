@@ -1,0 +1,22 @@
+<Defs>
+  <XenotypeDef Abstract="True" Name="BS_XenoBugBase">
+    <genes>
+      <li>Insectoid_body</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>PollutionRush</li>
+      <li>BGI_BinaryInheritance</li>
+      <li MayRequire="sarg.alphagenes">AG_InsectBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_HivelingVoice</li>
+      <li MayRequire="vanillaracesexpanded.insector">VRE_InsectFlesh</li>
+      <li>BS_AlienApperanceStandards</li>
+      <li>BS_InsectoidFourArms</li>
+		</genes>
+  </XenotypeDef>
+
+  <XenotypeDef Abstract="True" ParentName="BS_XenoBugBase" Name="BS_XenoBugStandard">
+    <genes>
+      <li>BS_CannotWearArmor</li>
+      <li>Undergrounder</li>
+		</genes>
+  </XenotypeDef>
+</Defs>

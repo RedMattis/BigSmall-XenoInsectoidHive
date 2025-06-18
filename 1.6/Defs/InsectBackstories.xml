@@ -1,0 +1,306 @@
+<Defs>
+  <!--The Melee on stuff like the predator are set fairly low because they already have a +8.-->
+
+  <BackstoryDef>
+    <defName>BS_InsectChildWorker</defName>
+    <title>worker nymph</title>
+    <titleShort>worker</titleShort>
+    <baseDesc>[PAWN_nameDef] was born into a xeno hive to fulfill a labor role from an early age.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>-1</Melee>
+      <Construction>3</Construction>
+      <Crafting>2</Crafting>
+      <Mining>2</Mining>
+      <Plants>1</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectChild</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>BS_InsectChildScout</defName>
+    <title>scout nymph</title>
+    <titleShort>scout</titleShort>
+    <baseDesc>[PAWN_nameDef] was raised to explore the hive's outskirts and report on dangers.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Melee>1</Melee>
+      <Animals>2</Animals>
+      <Social>-1</Social>
+      <Plants>1</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectChild</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+  <BackstoryDef>
+    <defName>BS_InsectChild_Alate</defName>
+    <title>alate spawn</title>
+    <titleShort>spawn</titleShort>
+    <baseDesc>As an alate [PAWN_nameDef] was treated with some priveledge and was given good tutoring.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>1</Melee>
+      <Mining>1</Mining>
+      <Cooking>1</Cooking>
+      <Plants>2</Plants>
+      <Medicine>2</Medicine>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectChild_Alate</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef Name="InsectAdultBasic" Abstract="True">
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <!-- The genes will force body types anyway, so whatever on these above. -->
+    <slot>Adulthood</slot>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectDefault</defName>
+    <title>xeno member</title>
+    <titleShort>hive member</titleShort>
+    <baseDesc>[PAWN_nameDef] was a member of an xeno hive.</baseDesc>
+
+    <skillGains>
+      <Melee>1</Melee>
+      <Construction>2</Construction>
+      <Crafting>1</Crafting>
+      <Mining>2</Mining>
+      <Cooking>2</Cooking>
+      <Animals>1</Animals>
+      <Plants>1</Plants>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectAdult</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectWorkerBuilder</defName>
+    <title>xeno builder</title>
+    <titleShort>builder</titleShort>
+    <baseDesc>[PAWN_nameDef] was responsible for constructing the hive's intricate tunnels and chambers.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Construction>5</Construction>
+      <Crafting>2</Crafting>
+      <Mining>3</Mining>
+      <Plants>2</Plants>
+      <Animals>-4</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectWorker</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectWorkerGatherer</defName>
+    <title>xeno gatherer</title>
+    <titleShort>gatherer</titleShort>
+    <baseDesc>[PAWN_nameDef] was tasked with collecting resources for the hive's sustenance and growth.</baseDesc>
+    <skillGains>
+      <Plants>4</Plants>
+      <Mining>1</Mining>
+      <Construction>-1</Construction>
+      <Crafting>-1</Crafting>
+      <Animals>2</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectWorker</li>
+      <li>BS_XenoInsectHunter</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectWarriorGuard</defName>
+    <title>xeno hive guard</title>
+    <titleShort>guard</titleShort>
+    <baseDesc>[PAWN_nameDef] was responsible for defending the hive against external threats.</baseDesc>
+    <skillGains>
+      <Melee>4</Melee>
+      <Shooting>1</Shooting>
+      <Construction>-2</Construction>
+      <Crafting>-1</Crafting>
+      <Mining>1</Mining>
+      <Plants>1</Plants>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectWarrior</li>
+      <li>BS_XenoInsectHunter</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectHunter</defName>
+    <title>xeno hunter</title>
+    <titleShort>hunter</titleShort>
+    <baseDesc>[PAWN_nameDef] was a fairly typical hunter-caste insectoid in a xeno hive.</baseDesc>
+    <skillGains>
+      <Melee>3</Melee>
+      <Animals>1</Animals>
+      <Plants>-2</Plants>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectHunter</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectHunterTracker</defName>
+    <title>xeno tracker</title>
+    <titleShort>tracker</titleShort>
+    <baseDesc>[PAWN_nameDef] specialized in tracking prey over long distances.</baseDesc>
+    <skillGains>
+      <Melee>1</Melee>
+      <Shooting>3</Shooting>
+      <Animals>3</Animals>
+      <Plants>2</Plants>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectHunter</li>
+      <li>BS_XenoInsectConsort</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectPrincess</defName>
+    <title>xeno princess</title>
+    <titleShort>princess</titleShort>
+    <baseDesc>[PAWN_nameDef] had a fairly standard upbringing as a princess in a xeno hive.</baseDesc>
+    <skillGains>
+      <Construction>-2</Construction>
+      <Cooking>1</Cooking>
+      <Animals>4</Animals>
+      <Medicine>2</Medicine>
+      <Intellectual>4</Intellectual>
+      <Social>2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectPrincess</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectPrincessHealer</defName>
+    <title>xeno princess healer</title>
+    <titleShort>healer</titleShort>
+    <baseDesc>[PAWN_nameDef] was trained in the art of healing and cared for the hive's wounded.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Medicine>5</Medicine>
+      <Intellectual>2</Intellectual>
+      <Social>2</Social>
+      <Animals>3</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectPrincess</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_InsectPrincessStrategist</defName>
+    <title>xeno princess strategist</title>
+    <titleShort>strategist</titleShort>
+    <baseDesc>[PAWN_nameDef] was groomed to become a leader in planning and executing complex strategies for the hive's expansion.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Construction>-2</Construction>
+      <Cooking>-2</Cooking>
+      <Animals>-4</Animals>
+      <Intellectual>3</Intellectual>
+      <Social>2</Social>
+      <Medicine>-1</Medicine>
+      <Melee>1</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectPrincess</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_XenoHiveQueen</defName>
+    <title>xeno hive queen</title>
+    <titleShort>hive queen</titleShort>
+    <baseDesc>[PAWN_nameDef] was the hive's central figure, focusing on coordination and leadership rather than direct labor.</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Intellectual>2</Intellectual>
+      <Medicine>1</Medicine>
+      <Construction>-1</Construction>
+      <Melee>-2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectQueen</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_XenoBroodConsort</defName>
+    <title>xeno brood consort</title>
+    <titleShort>brood consort</titleShort>
+    <baseDesc>[PAWN_nameDef] served as a consort, handling some hive duties, though more focused on supporting the hive's leadership.</baseDesc>
+    <skillGains>
+      <Animals>2</Animals>
+      <Medicine>2</Medicine>
+      <Social>2</Social>
+      <Construction>-1</Construction>
+      <Crafting>-1</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectConsort</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_XenoHiveEmissary</defName>
+    <title>xeno hive emissary</title>
+    <titleShort>hive emissary</titleShort>
+    <baseDesc>[PAWN_nameDef] was responsible for negotiating with other hives or species, specializing in diplomacy and social skills.</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Intellectual>1</Intellectual>
+      <Shooting>1</Shooting>
+      <Melee>-2</Melee>
+      <Construction>-1</Construction>
+      <Plants>3</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectEmissary</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <!-- General Backstories -->
+
+  <BackstoryDef ParentName="InsectAdultBasic">
+    <defName>BS_XenoLoneWanderer</defName>
+    <title>xeno lone wanderer</title>
+    <titleShort>lone wanderer</titleShort>
+    <baseDesc>[PAWN_nameDef] left their hive, to roam the wilderness. [PAWN_pronoun] learned to navigate harsh environments alone, developing a keen sense of self-reliance.</baseDesc>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Melee>2</Melee>
+      <Animals>1</Animals>
+      <Plants>5</Plants>
+      <Social>-2</Social>
+      <Intellectual>-3</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_XenoInsectEmissary</li>
+      <li>BS_XenoInsectConsort</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+</Defs>

@@ -12,6 +12,7 @@
 	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
+      <li>Exoskin</li>
 			<li>BS_DroneKind</li>
 			<li>BS_NoFamilyRelations</li>
 
@@ -68,7 +69,7 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
 		<modExtensions>
-      <li Class="BetterPrerequisites.XenotypeExtension">
+      <li Class="BigAndSmall.XenotypeExtension">
         <morphWeight>1</morphWeight>
 			</li>
 		</modExtensions>
@@ -86,6 +87,7 @@
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
 			<li>BS_DroneKind</li>
+      <li>BS_NoFamilyRelations</li>
 
 			<li>BS_CannotWearArmor</li>
 			<li>BS_NaturalArmor</li>
@@ -107,6 +109,7 @@
 			<li>Body_MaleOnly</li>
 			
 			<li>Beauty_Ugly</li>
+      <li>BP_MantisHead</li>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Body_Androgynous</li>
@@ -131,7 +134,7 @@
 			<li>BS_XenoNymph_Retromorphosis</li>
 		</genes>
 		<modExtensions>
-      <li Class="BetterPrerequisites.XenotypeExtension">
+      <li Class="BigAndSmall.XenotypeExtension">
         <morphWeight>0.8</morphWeight>
 			</li>
 		</modExtensions>
@@ -149,6 +152,7 @@
     <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
     <genes>
 			<li>Exoskin</li>
+      <li>Insectoid_body</li>
 			<li>PollutionRush</li>
 			<li>TotalHealing</li>
 			<li>BS_NaturalArmor_Great</li>
@@ -222,7 +226,7 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
 		<modExtensions>
-      <li Class="BetterPrerequisites.XenotypeExtension">
+      <li Class="BigAndSmall.XenotypeExtension">
         <morphWeight>0.2</morphWeight>
 				<morphIgnoreGender>true</morphIgnoreGender>
 			</li>

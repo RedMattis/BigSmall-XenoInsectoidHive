@@ -1,0 +1,83 @@
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <!-- <success>Always</success> -->
+    <mods>
+      <li>Vanilla Factions Expanded - Insectoids 2</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="BS_XenoHive"]/pawnGroupMakers</xpath>
+      <value>
+        <li>
+          <!--Nuchadus-->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <BS_XenoIrregular>3</BS_XenoIrregular>
+            <BS_XenoIrregular_Boom>5</BS_XenoIrregular_Boom>
+            <BS_XenoIrregular_Elite>3</BS_XenoIrregular_Elite>
+  
+            <VFEI2_Boomtick>20</VFEI2_Boomtick>
+            <VFEI2_Hellbeetle>20</VFEI2_Hellbeetle>
+            <VFEI2_Fuelmite>8</VFEI2_Fuelmite>
+          </options>
+        </li>
+  
+        <li>
+          <!--Chelis-->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <BS_XenoWorker>2</BS_XenoWorker>
+            <BS_XenoWarrior>1</BS_XenoWarrior>
+            <BS_XenoPredator>5</BS_XenoPredator>
+            <BS_XenoAbomination>0.1</BS_XenoAbomination>
+            <BS_XenoConsort>1</BS_XenoConsort>
+            <BS_XenoPrincess>1</BS_XenoPrincess>
+  
+            <VFEI2_Macrofly>40</VFEI2_Macrofly>
+            <VFEI2_Megawasp>20</VFEI2_Megawasp>
+            <VFEI2_Gigalocust>4</VFEI2_Gigalocust>
+          </options>
+        </li>
+  
+        <li>
+          <!--Kemia-->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <BS_XenoWorker>1</BS_XenoWorker>
+            <BS_XenoPredator>1</BS_XenoPredator>
+            <BS_XenoIrregular>10</BS_XenoIrregular>
+            <BS_XenoIrregular_Boom>1</BS_XenoIrregular_Boom>
+            <BS_XenoIrregular_Elite>2</BS_XenoIrregular_Elite>
+  
+            <VFEI2_Megathrips>20</VFEI2_Megathrips>
+            <VFEI2_Venomite>20</VFEI2_Venomite>
+            <VFEI2_Acidspitter>4</VFEI2_Acidspitter>
+          </options>
+        </li>
+  
+        <li>
+          <!--Xanides-->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <BS_XenoWorker>2</BS_XenoWorker>
+            <BS_XenoWarrior>5</BS_XenoWarrior>
+            <BS_XenoPredator>2</BS_XenoPredator>
+            <BS_XenoAbomination>0.1</BS_XenoAbomination>
+            <BS_XenoConsort>1</BS_XenoConsort>
+            <BS_XenoPrincess>1</BS_XenoPrincess>
+            <BS_XenoIrregular>5</BS_XenoIrregular>
+            <BS_XenoIrregular_Boom>2</BS_XenoIrregular_Boom>
+            <BS_XenoIrregular_Elite>4</BS_XenoIrregular_Elite>
+  
+            <VFEI2_Durapod>30</VFEI2_Durapod>
+            <VFEI2_Tankroach>10</VFEI2_Tankroach>
+            <VFEI2_Ironclad>4</VFEI2_Ironclad>
+          </options>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
