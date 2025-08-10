@@ -148,10 +148,10 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/PawnKindDef[defName="WildMan"]</xpath>
 			<value>
-				<xenotypeSet Inherit="False">
+				<xenotypeSet Inherit="True">
           <xenotypeChances>
-            <BS_XenoConsort>0.3</BS_XenoConsort>
-            <BS_XenoPrincess>0.3</BS_XenoPrincess>
+            <BS_XenoConsort>0.2</BS_XenoConsort>
+            <BS_XenoPrincess>0.2</BS_XenoPrincess>
           </xenotypeChances>
         </xenotypeSet>
 			</value>
@@ -159,8 +159,8 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-        <BS_XenoConsort>0.3</BS_XenoConsort>
-        <BS_XenoPrincess>0.3</BS_XenoPrincess>
+        <BS_XenoConsort>0.2</BS_XenoConsort>
+        <BS_XenoPrincess>0.2</BS_XenoPrincess>
       </value>
 		</match>
 	</Operation>
