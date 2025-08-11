@@ -66,8 +66,8 @@
         <BS_XenoEmissary>0.25</BS_XenoEmissary>
         <BS_XenoAbomination>0.01</BS_XenoAbomination>
 
-        <BS_XenoNymph>1</BS_XenoNymph>
-        <BS_XenoAlate>0.5</BS_XenoAlate>
+        <!-- <BS_XenoNymph>1</BS_XenoNymph>
+        <BS_XenoAlate>0.5</BS_XenoAlate> -->
 
         <BP_Mantid>0.025</BP_Mantid>
         <BP_Lunarian>0.025</BP_Lunarian>
@@ -181,8 +181,6 @@
         </carriers>
         <guards>
           <Villager>1</Villager>
-          <BS_XenoNymph>5</BS_XenoNymph>
-          <BS_XenoAlate>5</BS_XenoAlate>
           <BS_XenoWorker>20</BS_XenoWorker>
           <BS_XenoWarrior>5</BS_XenoWarrior>
           <BS_XenoPredator>1</BS_XenoPredator>
@@ -203,8 +201,6 @@
           <BS_XenoWorker>20</BS_XenoWorker>
           <BS_XenoWarrior>5</BS_XenoWarrior>
           <BS_XenoPredator>1</BS_XenoPredator>
-          <BS_XenoNymph>5</BS_XenoNymph>
-          <BS_XenoAlate>5</BS_XenoAlate>
           <BS_XenoIrregular>5</BS_XenoIrregular>
           <BS_XenoIrregular_Boom>1</BS_XenoIrregular_Boom>
           <BS_XenoIrregular_Elite>3</BS_XenoIrregular_Elite>
@@ -226,8 +222,6 @@
         <commonality>1</commonality>
         <options>
           <Miner>1</Miner>
-          <BS_XenoNymph>0.1</BS_XenoNymph>
-          <BS_XenoAlate>0.1</BS_XenoAlate>
           <BS_XenoWorker>5</BS_XenoWorker>
         </options>
       </li>
@@ -244,8 +238,6 @@
         <commonality>1</commonality>
         <options>
           <Logger>1</Logger>
-          <BS_XenoNymph>0.1</BS_XenoNymph>
-          <BS_XenoAlate>0.1</BS_XenoAlate>
           <BS_XenoWorker>5</BS_XenoWorker>
         </options>
       </li>
@@ -254,8 +246,6 @@
         <commonality>1</commonality>
         <options>
           <Farmer>1</Farmer>
-          <BS_XenoNymph>0.1</BS_XenoNymph>
-          <BS_XenoAlate>0.1</BS_XenoAlate>
           <BS_XenoWorker>5</BS_XenoWorker>
         </options>
       </li>
