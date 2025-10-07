@@ -227,7 +227,7 @@
     </forbiddenWeaponClasses>
 		<modExtensions>
       <li Class="BigAndSmall.XenotypeExtension">
-        <morphWeight>0.2</morphWeight>
+        <morphWeight>0.25</morphWeight>
 				<morphIgnoreGender>true</morphIgnoreGender>
 			</li>
 		</modExtensions>
