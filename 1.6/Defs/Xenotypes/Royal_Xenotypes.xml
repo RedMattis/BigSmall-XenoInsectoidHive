@@ -344,7 +344,8 @@
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Body_Standard</li>
-			<li>Skin_PaleYellow</li>
+      <li>Skin_DeepRed</li>
+			<!-- <li>Skin_PaleYellow</li> -->
       <li>BS_Skin_DarkAsh</li>
       <li>BS_LightGreenSkin</li>
 			
