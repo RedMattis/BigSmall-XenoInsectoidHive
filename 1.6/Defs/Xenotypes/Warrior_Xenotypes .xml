@@ -200,6 +200,7 @@
 			<li>Skin_PaleYellow</li>
 			<li>Skin_Green</li>
 			<li>Skin_DeepRed</li>
+      <li>VU_DarkPallorSkin</li>
 			<li>BS_Skin_DarkAsh</li>
 			<li>BS_FastAging</li>
 			<li>Learning_Fast</li>
@@ -220,7 +221,8 @@
 
 			<li>BS_Retromorph_TimeUnderTeenage</li>
 			<li>BS_XenoNymph_Retromorphosis</li>
-			<li>BS_XenoAlate_Retromorphosis</li>
+			<!-- <li>BS_XenoAlate_Retromorphosis</li> -->
+      <li>BS_XenoNymphMutant_Retromorphosis</li>
 		</genes>
 		<forbiddenWeaponClasses>
       <li>LongShots</li>

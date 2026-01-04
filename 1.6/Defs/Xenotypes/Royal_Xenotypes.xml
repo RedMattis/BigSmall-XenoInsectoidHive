@@ -135,6 +135,7 @@
       <li>BS_Metamorph_Pregnant</li>
       <li>BS_Metamorph_TimeAdult</li>
       <li>BS_XenoQueen_Metamorphosis</li>
+      <li>BS_MutantXenoQueen_Metamorphosis</li>
       <li>BS_Retromorph_TimeUnderTeenage</li>
       <li>BS_XenoAlate_Retromorphosis</li>
       <li>BS_XenoNymph_Retromorphosis</li>
@@ -273,6 +274,105 @@
       <li Class="BigAndSmall.XenotypeExtension">
         <morphWeight>0.25</morphWeight>
 				<morphIgnoreGender>true</morphIgnoreGender>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_MutantXenoQueen</defName>
+    <label>Mutated Queen</label>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <description>This Xeno Queen deviates dramatically from the norm and shows signs of being affected by multiple types of rogue mechanites.</description>
+    <iconPath>UI/Icons/Xenotypes/BP_XenoQueen</iconPath>
+    <inheritable>true</inheritable>
+		<nameMaker>BS_Bug_NamerFem_PlusCreepy</nameMaker>
+	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
+    <genes>
+      <!-- <li>ArchiteMetabolism</li> -->
+      <li>BS_AutoPregnancyArchite</li>
+      <li>BS_MinimalPregnancy</li>
+      <li>MoveSpeed_Slow</li>
+      <li>BGI_SecondaryGenes</li>
+      <li>Pain_Reduced</li>
+      <li>BS_NoFamilyRelations</li>
+      <li>PsychicAbility_Dull</li>
+      <li>BS_SoulPowerGreat</li>
+
+      <!-- BS_XenoBugStandard Stuff. -->
+      <li>Insectoid_body</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>PollutionRush</li>
+      <li MayRequire="sarg.alphagenes">AG_InsectBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_HivelingVoice</li>
+      <li MayRequire="vanillaracesexpanded.insector">VRE_InsectFlesh</li>
+      <li>BS_AlienApperanceStandards</li>
+      <li>BS_InsectoidFourArms</li>
+      <li>BS_CannotWearArmor</li>
+      <li>Undergrounder</li>
+
+      <!-- From Queen -->
+      <li>Exoskin</li>
+			<li>BS_NaturalArmor</li>
+			<li>Gigantism</li>
+			<li>BS_EndlessGrowth</li>
+			<li>BP_Raptoriales</li>
+			<li>BugParts_honeypot</li>
+      <li>BugParts_Abdomen_Ant</li>
+			<li>Beetle_Antennae</li>
+			<li>Immunity_SuperStrong</li>  
+			<li>BS_SlowBleeding</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>MinTemp_SmallIncrease</li>
+      <!-- <li>BS_StickyAcidSpray</li> -->
+      <li>Aggression_Aggressive</li>
+			<li>UVSensitivity_Mild</li>
+			<!-- <li>FireWeakness</li>
+			<li>FireTerror</li> -->
+			<li>MeleeDamage_Weak</li>
+			<li>Delicate</li>
+			<li>BS_AcidResistanceMid</li>
+			<li>Body_FemaleOnly</li>
+			<li>BS_EverFertile</li>
+			<li>BS_BirthLitter</li>
+			<li>BS_VeryEarlyMaturity</li>
+      <!-- <li>BS_ShortPregnancy</li> -->
+      <li>Moth_floof_SkinClr</li>
+      <li>WoundHealing_Fast</li>
+			
+			<!-- <li>BGI_RecessiveGenes</li> -->
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Standard</li>
+			<li>Skin_PaleYellow</li>
+      <li>BS_Skin_DarkAsh</li>
+      <li>BS_LightGreenSkin</li>
+			
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			
+			<li>Unstoppable</li>
+      <li>AptitudePoor_Shooting</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Social</li>
+      <li>BS_Instability_Catastrophic</li>
+
+      <li>BS_Retromorph_TimeUnderTeenage</li>
+      <li>BS_XenoAbomination_Retromorphosis</li>
+		</genes>
+		<forbiddenWeaponClasses>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+    <modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <genePickPriority>
+          <li>
+            <li>BS_RoyalJellyProduction</li>
+						<li>BS_JellyProduction</li>
+          </li>
+        </genePickPriority>
+        <morphWeight>0.25</morphWeight>
 			</li>
 		</modExtensions>
   </XenotypeDef>

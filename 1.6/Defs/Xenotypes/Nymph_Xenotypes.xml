@@ -122,4 +122,70 @@
 		</modExtensions>
   </XenotypeDef>
 
+  <XenotypeDef ParentName="BS_XenoBugStandard">
+    <defName>BS_XenoNymphMutant</defName>
+    <label>Mutanted Nymph</label>
+    <combatPowerFactor>0.75</combatPowerFactor>
+    <description>A mutated immature insect which will eventually grow up into a member of the xeno hive's worker caste...?</description>
+    <iconPath>UI/Icons/Xenotypes/BP_XenoNymph</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>BS_Bug_NamerFem_PlusCreepy</nameMaker>
+	  <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>BS_Skin_DarkAsh</li>
+      <li>VU_DarkPallorSkin</li>
+      <li>Instability_Major</li>
+      <li>Learning_Fast</li>
+
+			<li>BS_DroneKind</li>
+      <li>BS_NoFamilyRelations</li>
+      <li>Exoskin</li>
+
+			<li>BS_ToughSkin</li>
+			<li>BP_Raptoriales</li>
+			<li>BugParts_Abdomen_Ant</li>
+			<li>Beetle_Antennae</li>
+			<li>Immunity_Strong</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>Mood_Optimist</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>BS_SmallFrame</li>
+			<li>LowSleep</li>
+			<li>BS_AcidResistanceMid</li>
+			<li>Beauty_Pretty</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Androgynous</li>
+			<li>Body_Thin</li>
+			<li>Skin_PaleYellow</li>
+			<li>BS_VeryFastAging</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+      <li>Sterile</li>
+      <li>BS_NotFlirty</li>
+			<li>BS_Very_Passioned_Learning_Gene</li>
+			<li>Hair_BaldOnly</li>
+			
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeStrong_Construction</li>
+
+      <li>BS_Metamorph_TimeTeenage</li>
+      <li>BS_XenoPredator_Metamorphosis</li>
+      <li>BS_XenoAbomination_Metamorphosis</li>
+      <li>BS_XenoConsort_Metamorphosis</li>
+			<li>BS_XenoPrincess_Metamorphosis</li>
+      <li>BS_MutantXenoQueen_Metamorphosis</li>
+			<li>BS_XenoEmissary_Metamorphosis</li>
+		</genes>
+    <modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <morphWeight>0.5</morphWeight>
+        <morphIgnoreGender>true</morphIgnoreGender>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
 </Defs>
