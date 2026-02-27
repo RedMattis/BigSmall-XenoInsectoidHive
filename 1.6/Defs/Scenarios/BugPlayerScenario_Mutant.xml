@@ -1,5 +1,5 @@
 <Defs>
-  <ScenarioDef>
+  <ScenarioDef ParentName="ScenarioBase">
     <defName>BS_XenoInsectoidHiveStart_Mutant</defName>
     <label>Xeno Mutant Queen Start</label>
     <description>A mutant xeno queen start which will automatically produce new bugs. Suitable for players who want to run a hive without reliance on multiple queens and consorts.\n\nThis start will replace many wanderers with xeno hive xenotypes, and make non-human space-refugees of all kinds more common.</description>
